@@ -1,6 +1,6 @@
 export const stringToHex =
-    input => new Buffer(input, 'hex')[0];
+    input => Buffer.from(input, 'hex')[0];
 
 export const hexToBase64 =
-    input => new Buffer(input, 'hex').toString('base64')
+    input => Buffer.from(input, 'hex').toString('base64')
 
