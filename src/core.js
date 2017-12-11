@@ -1,6 +1,11 @@
+const crypto = require('crypto')
+
 export const stringToHex =
-    input => Buffer.from(input, 'hex')[0];
+    inputString => Buffer.from(inputString, 'hex')[0];
 
 export const hexToBase64 =
-    input => Buffer.from(input, 'hex').toString('base64')
+    hexString => Buffer.from(hexString, 'hex').toString('base64')
+
+export const xor =
+    (inputString, key) => inputString
 

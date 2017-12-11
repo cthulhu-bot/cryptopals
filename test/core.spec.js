@@ -1,4 +1,4 @@
-import { stringToHex, hexToBase64 } from '../src/core'
+import { stringToHex, hexToBase64, xor } from '../src/core'
 
 describe('converting', () => {
     it('from hex to base64 should work', () => {
@@ -7,5 +7,8 @@ describe('converting', () => {
     })
     it('from string to hex', () => {
         expect(stringToHex('80')).toBe(128)
+    })
+    it('from string to xor', () => {
+        expect(xor('1c0111001f010100061a024b53535009181c', '686974207468652062756c6c277320657965')).toBe('746865206b696420646f6e277420706c6179')
     })
 })
