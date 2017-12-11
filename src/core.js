@@ -1,7 +1,6 @@
-export const foo = () => {
-    const bar = 'insert code here'
-    console.log(bar)
-    return bar
-}
+export const stringToHex =
+    input => new Buffer(input, 'hex')[0];
 
-foo()
+export const hexToBase64 =
+    input => new Buffer(input, 'hex').toString('base64')
+
