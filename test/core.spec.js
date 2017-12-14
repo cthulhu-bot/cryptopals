@@ -9,6 +9,6 @@ describe('converting', () => {
         expect(core.base64ToHex('aGVsbG8gd29ybGQ=')).toBe('68656c6c6f20776f726c64')
     })
     it('from string to xor', () => {
-//        expect(core.xor('1c0111001f010100061a024b53535009181c', '686974207468652062756c6c277320657965')).toBe('746865206b696420646f6e277420706c6179')
+        expect(core.xor('1c0111001f010100061a024b53535009181c', '686974207468652062756c6c277320657965')).toBe('746865206b696420646f6e277420706c6179')
     })
 })
